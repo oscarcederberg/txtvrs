@@ -23,15 +23,13 @@ fn main() {
 fn parse_command(command: &String) {
     match command.to_lowercase().as_str() {
         "help" => print_help(),
-        _ => {
-            match command.parse() {
-                Ok(argument) => txtv::print_page(argument),
-                _ => {
-                    eprintln!("error: could not parse argument.");
-                    process::exit(1);
-                }
+        _ => match command.parse() {
+            Ok(argument) => txtv::print_page(argument),
+            _ => {
+                eprintln!("error: could not parse argument.");
+                process::exit(1);
             }
-        }
+        },
     }
 }
 
