@@ -74,4 +74,14 @@ Each screen consists of a header, content, and footer. If multiple screens, they
 ```
 
 ## Symbols
-Less-than, and Greater-than-signs are replaced with `&lt;` and `&gt;` in scraped text. These are called "Named Character References", and should be replaced with their symbol-equivalent. **Are there other named character references that needs to be replaced after parsing?**
+These are called "Named Character References" (NCRs), and should be replaced with their symbol-equivalent.
+
+Currently, these NCRs have been found:
+```
+NCR     Symbol
+&lt;    <
+&gt;    >
+&quot;  "
+&amp;   &
+&#x27;  '
+```
