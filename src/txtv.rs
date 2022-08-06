@@ -3,6 +3,12 @@ enum PageError {
     Empty,
 }
 
+enum PageFormat {
+    FirstPage,
+    Article,
+    Other,
+}
+
 pub fn print_page(page: u32) {
     use PageError::{Connection, Empty};
     let page_content = get_page_content(page);
@@ -15,6 +21,13 @@ pub fn print_page(page: u32) {
             Empty => println!("no page at {}", page),
             Connection => println!("connection error"),
         },
+    }
+}
+
+fn get_page_format(page: u32) -> PageFormat {
+    match page {
+        100 => PageFormat::FirstPage,
+        _ => PageFormat::Other,
     }
 }
 
