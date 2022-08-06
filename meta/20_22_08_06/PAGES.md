@@ -4,9 +4,8 @@
 104 Utrikes (Innehål)
 106 Inrikes (Artikel)
 127 Ekonomi i korthet
-128 Inrikes i korthet
 130 Utrikes (Artikel)
-149 Världen runt (Artikel)
+148 Världen i korthet
 150 Kultur (Artikel)
 
 200 Ekonomi (Innehåll)
@@ -63,6 +62,7 @@
 422 Snörapporten
 440 Resultatbörsen
 441 Blandat
+599 Viktigt meddelande till almänheten
 600 På TV (Innehåll)
 601 På TV
 623 TV-info
